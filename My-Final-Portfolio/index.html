@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milani Kukuma - Software Developer Portfolio</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+    <nav>
+       
+    </nav>
+
+    <header>
+        <h1>Hi, I am Milani Kukuma</h1>
+        <p>Software Developer | Tech Enthusiast | Problem Solver</p>
+        <p>
+            <a href="#about">About</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#projects">Projects</a>
+            <a href="#Certificates">Certificates</a>
+        </p>
+    </header>
+
+    <div class="container">
+        <section class="home-section">
+            <h1>Welcome to my space</h1>
+            <p id="home">
+                <span id="typed-text"></span>
+                <span id="moreText" class="hidden">
+                    From creating seamless experiences with React and NestJS to tackling data challenges with PostgreSQL, my journey has been fueled by a hunger to learn and grow.
+                </span>
+            </p>
+            <a href="./IMAGES/Milani Kukuma-CV (1).pdf" download="Milani_Kukuma_CV.pdf" id="readMoreButton">
+                Download My CV
+            </a>
+        </section>
+    </div>
+    
+
+    <section id="about" class="about-section">
+        <h1>About Me</h1>
+        <p id="aboutMe">
+            I am a passionate software developer with a knack for building dynamic applications and solving complex problems.
+            <span id="moreText" class="hidden">
+                From creating seamless experiences with React and NestJS to tackling data challenges with PostgreSQL, my journey has been fueled by a hunger to learn and grow.
+            </span>
+        </p>
+        <button id="readMoreButton">Read More</button>
+    </section>
+    </div>
+
+    <section id="skills"class="skills-section">
+        <h1>My Skills</h1>
+        <div class="skills-container">
+            <div class="skill-container">
+                <h3>Programming Languages</h3>
+                <div class="skill-box-container">
+                    <div class="skill-box">JavaScript</div>
+                    <div class="skill-box">C#</div>
+                    <div class="skill-box">Python</div>
+                    <div class="skill-box">Java</div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <h3>Frameworks & Libraries</h3>
+                <div class="skill-box-container">
+                    <div class="skill-box">React</div>
+                    <div class="skill-box">NestJS</div>
+                    <div class="skill-box">.NET</div>
+                    <div class="skill-box">Xamarin</div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <h3>Databases</h3>
+                <div class="skill-box-container">
+                    <div class="skill-box">MySQL</div>
+                    <div class="skill-box">PostgreSQL</div>
+                    <div class="skill-box">SQLite</div>
+                    <div class="skill-box">MongoDB</div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <h3>Tools</h3>
+                <div class="skill-box-container">
+                    <div class="skill-box">Git</div>
+                    <div class="skill-box">Docker</div>
+                    <div class="skill-box">Visual Studio Code</div>
+                    <div class="skill-box">Postman</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="project-section">
+        <h1>Projects</h1>
+        <div class="project-cards">
+            <div class="project">
+                <h3>CODE HEAD'S LEARNING HUB PROJECT</h3>
+                <p>
+                    The Tech Learning Hub is an interactive platform designed to empower individuals with the latest skills in software development.
+                    <span id="moreText1" class="hidden">
+                        It offers a wide range of courses, tutorials, and resources aimed at learners of all levels, from beginners to experts.
+                    </span>
+                </p>
+                <button class="readMoreButton" onclick="toggleText('moreText1')">Read More</button>
+            </div>
+            <div class="project">
+                <h3>CODLIFY PROJECT</h3>
+                <p>
+                    Codlify is a software company portfolio showcasing a range of services designed to help businesses thrive in the digital age.
+                    <span id="moreText2" class="hidden">
+                        Codlify provides custom software applications, builds responsive websites, and ensures seamless database management for optimal performance.
+                    </span>
+                </p>
+                <button class="readMoreButton" onclick="toggleText('moreText2')">Read More</button>
+            </div>
+            <div class="project">
+                <h3>Loan Website</h3>
+                <p>
+                    A loan management platform developed using C# focusing on seamless user experience and backend reliability.
+                    <span id="moreText3" class="hidden">
+                        This platform allows users to apply for loans, track their application status, and manage repayments.
+                    </span>
+                </p>
+                <button class="readMoreButton" onclick="toggleText('moreText3')">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Contact Me</h2>
+        <p>Email: Kukumamilani62@gmail.com | LinkedIn: <a href="https://www.linkedin.com/in/milani-kukuma-71a330279/">Click to Connect</a></p>
+
+        <form action="https://formspree.io/f/xdkoddpe" method="post" class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+    
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+    
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
