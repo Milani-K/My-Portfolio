@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milani Kukuma - Software Developer Portfolio</title>
     <link rel="stylesheet" href="./stylesheet.css">
 </head>
+
 <body>
     <nav>
-       
+
     </nav>
 
     <header>
-        <div class="image-container">
-        <img src="./IMAGES/my-images/IMG_6257.jpg" class="hearder-image">
-    </div>
+
         <h1> Milani Kukuma</h1>
         <p>Software Developer | Tech Enthusiast | Problem Solver</p>
         <p>
             <a href="#about">About</a> |
             <a href="#skills">Skills</a> |
             <a href="#projects">Projects</a>|
-            <a href="#Certificates">Certificates</a>|
+            <a href="#certificates">Certificates</a>|
             <a href="#contact">Contact Me</a>
         </p>
     </header>
@@ -32,39 +32,60 @@
             <p id="home">
                 <span id="typed-text"></span>
                 <span id="moreText" class="hidden">
-                    From creating seamless experiences with React and NestJS to tackling data challenges with PostgreSQL, my journey has been fueled by a hunger to learn and grow.
+                    From creating seamless experiences with React and NestJS to tackling data challenges with
+                    PostgreSQL, my journey has been fueled by a hunger to learn and grow.
                 </span>
             </p>
             <button class="download-button">
-            <a href="./IMAGES/Milani Kukuma-CV (1).pdf" download="Milani_Kukuma_CV.pdf" >
-                Download My CV
-            </a>
-        </button>
+                <a href="./IMAGES/Milani Kukuma-CV (1).pdf" download="Milani_Kukuma_CV.pdf">
+                    Download My CV
+                </a>
+            </button>
         </section>
     </div>
-    
+
 
     <section id="about" class="about-section">
-        <h1>About Me</h1>
-        <p id="aboutMe">
-           
+        <div class="about-container">
+            <img src="./IMAGES/my-images/mizozo.png" alt="Milani Kukuma" class="about-image" />
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p id="aboutMe">
+                <p>Hello! I'm <strong>Milani Kukuma</strong>, a passionate and motivated software developer with
+                    expertise in <strong>JavaScript</strong>, <strong>React</strong>, and <strong>.NET</strong>. I
+                    thrive on creating innovative, user-friendly applications that solve real-world problems. With a
+                    solid foundation from the University of the Western Cape and CodeSpace Academy, I am excited to
+                    continue growing in my field and collaborating on impactful projects.</p>
+                <button><a href="#" class="read-more" onclick="toggleReadMore()">Read More</a></button>
 
-            <p>Hello! I'm <strong>Milani Kukuma</strong>, a passionate and motivated software developer with expertise in <strong>JavaScript</strong>, <strong>React</strong>, and <strong>.NET</strong>. I thrive on creating innovative, user-friendly applications that solve real-world problems. With a solid foundation from the University of the Western Cape and CodeSpace Academy, I am excited to continue growing in my field and collaborating on impactful projects.</p>
-            <a href="#" class="read-more" onclick="toggleReadMore()">Read More</a>
-            
-            <div id="more-info" style="display:none;">
-                <p>Hello! I'm <strong>Milani Kukuma</strong>, a dedicated and highly motivated software developer with a solid educational foundation. I hold certifications from the University of the Western Cape’s Future Innovation Lab and CodeSpace Academy, where I developed proficiency in <strong>JavaScript</strong>, <strong>React</strong>, <strong>C#</strong>, and <strong>.NET</strong>.</p>
-                
-                <p>Throughout my studies and hands-on projects, I’ve built a strong foundation in web development, mobile app development, and database management. I am particularly passionate about creating seamless, user-friendly applications and tackling real-world problems through innovative solutions. Currently, I am working on developing a mobile app for medical professionals to track TB patients' treatment compliance using <strong>C#</strong>, <strong>SQLite</strong>, and <strong>.NET MAUI</strong>, where I serve as both Lead Developer and Scrum Master.</p>
-                
-                <p>In addition to my technical skills, I have honed my leadership, communication, and teamwork abilities, allowing me to collaborate effectively and lead projects. I’m always eager to learn, grow, and take on new challenges. If you're looking for a passionate and solution-oriented developer, I’d love to connect and collaborate on your next project!</p>
+                <div id="more-info" style="display:none;">
+                    <p>Hello! I'm <strong>Milani Kukuma</strong>, a dedicated and highly motivated software developer
+                        with a solid educational foundation. I hold certifications from the University of the Western
+                        Cape’s Future Innovation Lab and CodeSpace Academy, where I developed proficiency in
+                        <strong>JavaScript</strong>, <strong>React</strong>, <strong>C#</strong>, and
+                        <strong>.NET</strong>.</p>
+
+                    <p>Throughout my studies and hands-on projects, I’ve built a strong foundation in web development,
+                        mobile app development, and database management. I am particularly passionate about creating
+                        seamless, user-friendly applications and tackling real-world problems through innovative
+                        solutions. Currently, I am working on developing a mobile app for medical professionals to track
+                        TB patients' treatment compliance using <strong>C#</strong>, <strong>SQLite</strong>, and
+                        <strong>.NET MAUI</strong>, where I serve as both Lead Developer and Scrum Master.</p>
+
+                    <p>In addition to my technical skills, I have honed my leadership, communication, and teamwork
+                        abilities, allowing me to collaborate effectively and lead projects. I’m always eager to learn,
+                        grow, and take on new challenges. If you're looking for a passionate and solution-oriented
+                        developer, I’d love to connect and collaborate on your next project!</p>
+                </div>
+                </p>
             </div>
-        <button id="readMoreButton">Read More</button>
+        </div>
     </section>
+
     </div>
 
-    <section id="skills"class="skills-section">
-        <h1 class="skills-title" >My Skills</h1>
+    <section id="skills" class="skills-section">
+        <h1 class="skills-title">My Skills</h1>
         <div class="skills-container">
             <div class="skill-container">
                 <h3>Programming Languages</h3>
@@ -114,9 +135,11 @@
             <div class="project">
                 <h3>CODE HEAD'S LEARNING HUB PROJECT</h3>
                 <p>
-                    The Tech Learning Hub is an interactive platform designed to empower individuals with the latest skills in software development.
+                    The Tech Learning Hub is an interactive platform designed to empower individuals with the latest
+                    skills in software development.
                     <span id="moreText1" class="hidden">
-                        It offers a wide range of courses, tutorials, and resources aimed at learners of all levels, from beginners to experts.
+                        It offers a wide range of courses, tutorials, and resources aimed at learners of all levels,
+                        from beginners to experts.
                     </span>
                 </p>
                 <button class="readMoreButton" onclick="toggleText('moreText1')">Read More</button>
@@ -124,134 +147,150 @@
             <div class="project">
                 <h3>CODLIFY PROJECT</h3>
                 <p>
-                    Codlify is a software company portfolio showcasing a range of services designed to help businesses thrive in the digital age.
+                    Codlify is a software company portfolio showcasing a range of services designed to help businesses
+                    thrive in the digital age.
                     <span id="moreText2" class="hidden">
-                        Codlify provides custom software applications, builds responsive websites, and ensures seamless database management for optimal performance.
+                        Codlify provides custom software applications, builds responsive websites, and ensures seamless
+                        database management for optimal performance.
                     </span>
                 </p>
                 <button class="readMoreButton" onclick="toggleText('moreText2')">Read More</button>
             </div>
-            <div id="projects"class="project">
+            <div id="projects" class="project">
                 <h3>Loan Website</h3>
                 <p>
-                    A loan management platform developed using C# focusing on seamless user experience and backend reliability.
+                    A loan management platform developed using C# focusing on seamless user experience and backend
+                    reliability.
                     <span id="moreText3" class="hidden">
-                        This platform allows users to apply for loans, track their application status, and manage repayments.
+                        This platform allows users to apply for loans, track their application status, and manage
+                        repayments.
                     </span>
                 </p>
-                <button class="readMoreButton" onclick="toggleText('moreText3')">Read More</button>
+                <button class="readMoreButtonaboutme" onclick="toggleText('moreText3')">Read More</button>
             </div>
         </div>
     </section>
-    <section id="certification" class="certification-section">
+    <section id="certificates" class="certification-section">
         <h1>My Certifications</h1>
         <p>Here's a glimpse of my certifications.</p>
         <div class="certificate-container">
             <!-- Card 1 -->
             <div class="certificate-card">
-                <img src="path/to/your/certificate1.jpg" alt="Certification 1" class="certificate-image" />
+                <img src="./IMAGES/Certificates/Fullstack-development.jpg" alt="Certification 1"
+                    class="certificate-image" />
                 <div class="certificate-intro">
                     <h3>Full Stack Development Certification</h3>
                     <p>Completed in 2024.</p>
                 </div>
                 <div class="certificate-details">
-                    <p>This certification validates my expertise in building web applications using React, focusing on components, state management, and performance optimization.</p>
+                    <p>This certification validates my expertise in building web applications using React, focusing on
+                        components, state management, and performance optimization.</p>
                 </div>
             </div>
-    
+
             <!-- Card 2 -->
             <div class="certificate-card">
-                <img src="path/to/your/certificate2.jpg" alt="Certification 2" class="certificate-image" />
+                <img src="./IMAGES/Certificates/Java.jpg" alt="Certification 2" class="certificate-image" />
                 <div class="certificate-intro">
                     <h3>Java Certification</h3>
                     <p>Completed in 2024.</p>
                 </div>
                 <div class="certificate-details">
-                    <p>This demonstrates my proficiency in Java programming, including object-oriented principles, application development, and problem-solving. It validates my skills and strengthens my career prospects.</p>
+                    <p>This demonstrates my proficiency in Java programming, including object-oriented principles,
+                        application development, and problem-solving. It validates my skills and strengthens my career
+                        prospects.</p>
                 </div>
             </div>
-    
+
             <!-- Card 3 -->
             <div class="certificate-card">
-                <img src="path/to/your/certificate3.jpg" alt="Certification 3" class="certificate-image" />
+                <img src="./IMAGES/Certificates/Python.jpg" alt="Certification 3" class="certificate-image" />
                 <div class="certificate-intro">
                     <h3>Python Certification</h3>
                     <p>Completed in 2024.</p>
                 </div>
                 <div class="certificate-details">
-                    <p>This proves my Python programming skills, covering areas like scripting, automation, and data analysis. It highlights my expertise and boosts my career opportunities.</p>
+                    <p>This proves my Python programming skills, covering areas like scripting, automation, and data
+                        analysis. It highlights my expertise and boosts my career opportunities.</p>
                 </div>
             </div>
-    
+
             <!-- Card 4 -->
             <div class="certificate-card">
-                <img src="path/to/your/certificate4.jpg" alt="Certification 4" class="certificate-image" />
+                <img src="./IMAGES/Certificates/React-js.jpg" alt="Certification 4" class="certificate-image" />
                 <div class="certificate-intro">
                     <h3>Full Stack Development Certification</h3>
                     <p>Completed in 2024.</p>
                 </div>
                 <div class="certificate-details">
-                    <p>Gained proficiency in building dynamic, user-friendly web applications using React JS, including state management and component-based architecture.</p>
+                    <p>Gained proficiency in building dynamic, user-friendly web applications using React JS, including
+                        state management and component-based architecture.</p>
                 </div>
             </div>
-    
+
             <!-- Card 5 -->
             <div class="certificate-card">
-                <img src="path/to/your/certificate5.jpg" alt="Certification 5" class="certificate-image" />
+                <img src="./IMAGES/Certificates/React-js.jpg" alt="Certification 5" class="certificate-image" />
                 <div class="certificate-intro">
                     <h3>React JS Certification</h3>
                     <p>Completed in 2024.</p>
                 </div>
                 <div class="certificate-details">
-                    <p>Gained proficiency in building dynamic, user-friendly web applications using React JS, including state management and component-based architecture.</p>
+                    <p>Gained proficiency in building dynamic, user-friendly web applications using React JS, including
+                        state management and component-based architecture.</p>
                 </div>
             </div>
-    
+
             <!-- Card 6 -->
             <div class="certificate-card">
-                <img src="path/to/your/certificate6.jpg" alt="Certification 6" class="certificate-image" />
+                <img src="./IMAGES/Certificates/Screenshot (6).png" alt="Certification 6" class="certificate-image" />
                 <div class="certificate-intro">
                     <h3>Intro to Javascript and Node.js</h3>
                     <p>Completed in 2024.</p>
                 </div>
                 <div class="certificate-details">
-                    <p>Mastered the fundamentals of JavaScript and Node.js, including core programming concepts, asynchronous operations, and building server-side applications.</p>
+                    <p>Mastered the fundamentals of JavaScript and Node.js, including core programming concepts,
+                        asynchronous operations, and building server-side applications.</p>
                 </div>
             </div>
+            <button class="view-more-button">View More</button>
         </div>
     </section>
-    
-    
-    
+
+
+
     <section id="contact" class="contact">
         <div class="contact-info">
             <h1>Excited to hear what you have for me!</h1>
-            <p>If you have any questions or just want to say hi, feel free to drop me a message. I'm always happy to connect!</p>
+            <p>If you have any questions or just want to say hi, feel free to drop me a message. I'm always happy to
+                connect!</p>
             <p>Fill out the form on the right and I'll get back to you as soon as I can.</p>
         </div>
         <div class="contact-form-wrapper">
             <form action="https://formspree.io/f/xdkoddpe" method="post" class="contact-form">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required placeholder="Enter your name">
-        
+
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required placeholder="Enter your email">
-        
+
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
-        
+
                 <button type="submit">Send Message</button>
             </form>
         </div>
     </section>
-    
+
     <footer>
         <h2>Contact Me</h2>
-        <p>Email: Kukumamilani62@gmail.com | LinkedIn: <a href="https://www.linkedin.com/in/milani-kukuma-71a330279/">Click to Connect</a></p>
+        <p>Email: Kukumamilani62@gmail.com | LinkedIn: <a
+                href="https://www.linkedin.com/in/milani-kukuma-71a330279/">Click to Connect</a></p>
 
-        
+
     </footer>
 
     <script src="./script.js"></script>
 </body>
+
 </html>
