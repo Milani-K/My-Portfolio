@@ -58,7 +58,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const moreText = document.getElementById('moreText');
 
     readMoreButton.addEventListener('click', function () {
-        moreText.classList.toggle('hidden'); // Toggle the visibility of the additional text
-        readMoreButton.textContent = moreText.classList.contains('hidden') ? "Read More" : "Read Less"; // Change button text
+        moreText.classList.toggle('hidden');
+        readMoreButton.textContent = moreText.classList.contains('hidden') ? "Read More" : "Read Less"; 
     });
 });
+
+
+function toggleReadMore() {
+    var moreInfo = document.getElementById("more-info");
+    var readMoreLink = document.querySelector(".read-more");
+
+    if (moreInfo.style.display === "none") {
+        moreInfo.style.display = "block";
+        readMoreLink.textContent = "Read Less";
+    } else {
+        moreInfo.style.display = "none";
+        readMoreLink.textContent = "Read More";
+    }
+}
