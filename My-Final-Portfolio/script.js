@@ -76,3 +76,7 @@ function toggleReadMore() {
         readMoreLink.textContent = "Read More";
     }
 }
+
+document.getElementById('viewMoreBtn').addEventListener('click', function() {
+    window.location.href = 'certificates.html';
+});

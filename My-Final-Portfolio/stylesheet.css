@@ -89,7 +89,9 @@ header p {
     text-align: center;       
     margin-bottom: 4px;
     padding-top: 0; 
-    color: palevioletred;  
+    color:pink;  
+    font-weight: bold;
+    border-right: 2px solid white; 
 }
 
 
@@ -103,7 +105,7 @@ header p {
 }
 
 .download-button{
-    background-color: #6a1b9a;  /* Purple color */
+    background-color: #6a1b9a; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -113,8 +115,42 @@ header p {
 }
 
 .download-button:hover{
-    background-color: #9c4dcc;  /* Lighter purple on hover */
+    background-color: #9c4dcc;  
 }
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #f0f0f0;
+}
+
+.text-color {
+    font-size: 8rem; 
+    color: #2c3e50;
+    display: inline-block;
+}
+
+#welcome {
+    color: palevioletred; 
+    animation: highlightText 2s ease-in-out infinite;
+}
+
+@keyframes highlightText {
+    0% {
+        color:  purple; 
+        text-shadow: none;
+    }
+    50% {
+        color:palevioletred; 
+        text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347; 
+    }
+    100% {
+        color:purple; 
+        text-shadow: none;
+    }
+}
+
 
 /* About Section */
 .about-section {
@@ -239,54 +275,68 @@ button a:hover {
     cursor: pointer;
 }
 
-/* Projects Section */
+/* Project Section */
 .project-section {
-    padding: 60px 0;
-    background: #ffffff;
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4;
     color: #333;
-    text-align: center;  
 }
 
 .project-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column; /* Stacks the cards vertically */
+    gap: 40px; /* Adds space between the project cards */
+    align-items: center; /* Centers the project cards horizontally */
+ 
 }
 
 .project {
-    width: 30%;
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 80%; /* Adjust the width to make it responsive */
+    max-width: 600px; /* Limit max width for larger screens */
+    text-align: left;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .project h3 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .project p {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1em;
+    color: #555;
 }
 
-.project .readMoreButton {
-    background-color: #8a2be2;
+.readMoreButton {
+    background-color: #6a1b9a;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
     margin-top: 10px;
 }
 
-.project .readMoreButton:hover {
-    background-color: #5e2c8d;
+.readMoreButton:hover {
+    background-color: #6a1b9a;
 }
-/*certifications*/
+
+.hidden {
+    display: none;
+}
+
+/* General Styles */
 .certification-section {
     text-align: center;
     padding: 40px;
@@ -300,11 +350,11 @@ button a:hover {
 }
 
 .certificate-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
     gap: 20px;
     margin-top: 20px;
+    padding: 0 20px; /* Optional: add padding on the sides */
 }
 
 .certificate-card {
@@ -312,9 +362,14 @@ button a:hover {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 30%;
     padding: 15px;
     text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-10px); /* Slightly lift the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow for hover */
 }
 
 .certificate-image {
@@ -332,6 +387,20 @@ button a:hover {
     font-size: 0.9em;
     color: #555;
 }
+
+/* Responsive Design: For smaller screens */
+@media (max-width: 768px) {
+    .certificate-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .certificate-container {
+        grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+}
+
 
 .view-more-button{
     background-color: #6a1b9a;  /* Purple color */

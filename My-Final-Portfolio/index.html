@@ -28,7 +28,7 @@
 
     <div class="container">
         <section class="home-section">
-            <h1 class="text-color">Hi,Welcome To My Space!</h1>
+            <h1 id="welcome"class="text-color">Hi,Welcome To My Space!</h1>
             <p id="home">
                 <span id="typed-text"></span>
                 <span id="moreText" class="hidden">
@@ -132,7 +132,9 @@
     <section id="project" class="project-section">
         <h1>Projects</h1>
         <div class="project-cards">
-            <div class="project">
+             <a href="https://codeheadshublms.netlify.app/">
+                <img src="./IMAGES/projects/codlify.png" alt="Codlify Project" class="certificate-image" />
+            </a>
                 <h3>CODE HEAD'S LEARNING HUB PROJECT</h3>
                 <p>
                     The Tech Learning Hub is an interactive platform designed to empower individuals with the latest
@@ -144,30 +146,25 @@
                 </p>
                 <button class="readMoreButton" onclick="toggleText('moreText1')">Read More</button>
             </div>
-            <div class="project">
-                <h3>CODLIFY PROJECT</h3>
-                <p>
-                    Codlify is a software company portfolio showcasing a range of services designed to help businesses
-                    thrive in the digital age.
-                    <span id="moreText2" class="hidden">
-                        Codlify provides custom software applications, builds responsive websites, and ensures seamless
-                        database management for optimal performance.
-                    </span>
-                </p>
-                <button class="readMoreButton" onclick="toggleText('moreText2')">Read More</button>
-            </div>
-            <div id="projects" class="project">
-                <h3>Loan Website</h3>
-                <p>
-                    A loan management platform developed using C# focusing on seamless user experience and backend
-                    reliability.
-                    <span id="moreText3" class="hidden">
-                        This platform allows users to apply for loans, track their application status, and manage
-                        repayments.
-                    </span>
-                </p>
-                <button class="readMoreButtonaboutme" onclick="toggleText('moreText3')">Read More</button>
-            </div>
+            <section id="project" class="project-section">
+                
+                <div class="project-cards">
+                     <a href="https://codelify-code.netlify.app/">
+                        <img src="./IMAGES/projects/codlify.png" alt="Codlify Project" class="certificate-image" />
+                    </a>
+                        <h3>CODLIFY PROJECT</h3>
+                        <p>
+                            Codlify is a software company portfolio showcasing a range of services designed to help businesses
+                            thrive in the digital age.
+                            <span id="moreText2" class="hidden">
+                                Codlify provides custom software applications, builds responsive websites, and ensures seamless
+                                database management for optimal performance.
+                            </span>
+                        </p>
+                        <button class="readMoreButton" onclick="toggleText('moreText2')">Read More</button>
+                    </div>
+            
+            
         </div>
     </section>
     <section id="certificates" class="certification-section">
@@ -253,7 +250,8 @@
                         asynchronous operations, and building server-side applications.</p>
                 </div>
             </div>
-            <button class="view-more-button">View More</button>
+            <button class="view-more-button" id="viewMoreBtn">View More</button>
+
         </div>
     </section>
 
